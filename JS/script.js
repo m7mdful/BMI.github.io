@@ -41,7 +41,7 @@ let submit = document.getElementById('submit-btn').addEventListener('click',func
 
     if(swbol){
         switch(true){
-            case(mass>=18 && mass<25):
+            case(mass <18 || mass>=18 && mass<25):
                 dDegree.innerHTML = "Slim"
                 dMass.innerHTML = `Your Body Mass : ${mass.toFixed(2)}`
                 dDegree.style = "color: rgb(141, 139, 0);";
