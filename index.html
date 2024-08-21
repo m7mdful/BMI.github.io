@@ -15,11 +15,30 @@
     <div id="bg-inputs" class="flex flex-col p-10 rounded-lg gap-3 sm:gap-12 lg:p-16 lg:gap-8">
         <div class="flex flex-wrap gap-3 justify-center lg:gap-5">
             <h1 class="font-mono text-lg sm:text-2xl lg:text-4xl">Enter your weight : </h1>
-            <input id="w-in" type="text" class="bg-white rounded-md transform duration-300 hover:scale-110">
+            <input id="w-in" type="number" max ="300" min="20" class="bg-white rounded-md transform duration-300 hover:scale-110 w-1/4">
         </div>
         <div class="flex flex-wrap gap-3 justify-center lg:gap-5">
             <h1 class="font-mono text-lg sm:text-2xl lg:text-4xl">Enter your height : </h1>
-            <input id="h-in" type="text" class="bg-white rounded-md transform duration-300 hover:scale-110">
+            <input id="h-in" type="number" max = "300" min="80" class="bg-white rounded-md transform duration-300 hover:scale-110 w-1/4">
+        </div>
+        <div class="flex justify-center">
+            
+            <label class="inline-flex items-center cursor-pointer">
+                <span class="ms-3 font-medium text-gray-900 dark:text-back pr-4 text-lg">m</span>
+                <input id="choosing" type="checkbox" value="" class="sr-only peer">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:border-gray-600"></div>
+                <span class="ms-3 text-lg font-medium text-gray-900 dark:text-black">cm</span>
+            </label>
+        </div>
+
+        <div class="flex justify-center">
+            
+            <label class="inline-flex items-center cursor-pointer">
+                <span class="ms-3 font-medium text-gray-900 dark:text-back pr-4 text-lg">kg</span>
+                <input id="choosingw" type="checkbox" value="" class="sr-only peer">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:border-gray-600"></div>
+                <span class="ms-3 text-lg font-medium text-gray-900 dark:text-black">lb</span>
+            </label>
         </div>
         <div class="flex justify-center">
             <button id="submit-btn" class="bg bg-white p-2 rounded-full font-serif transform duration-300 hover:scale-110 hover:bg-neutral-500 hover:text-white">Submit</button>
